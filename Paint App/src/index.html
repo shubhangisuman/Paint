@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="sketch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+</head>
+<body>
+    <div class="app">
+    <div class="type">
+        <input type="radio" name="pen-type" id="pencil" checked>
+        <label for="pencil"><i class="fas fa-pencil-alt"></i></label>
+        <input type="radio" name="pen-type" id="pen">
+        <label for="pencil"><i class="fas fa-pen"></i></label>
+        <input type="radio" name="pen-type" id="eraser">
+        <label for="eraser"><i class="fas fa-eraser"></i></label>
+    </div>
+    <div class="size">
+        <label for="pen-size">Size</label>
+        <input type="range" min="1" max="50" id="pen-size">
+    </div>
+    <div class="color">
+        <label for="pen-color">Color</label>
+        <input type="color" id="pen-color" value="#000">
+    </div>
+    <div class="actions">
+        <button id="reset-canvas" class="button"><i class="fas fa-share"></i></button>
+        <button id="save-canvas" class="button"><i class="fas fa-save"></i></button>
+    </div>
+        <div id="canvas-wrapper">
+        </div>
+    </div>
+</body>
+</html>
